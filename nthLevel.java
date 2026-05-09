@@ -2,7 +2,6 @@ import java.util.*;
 public class nthLevel {
     public static class node {
         int value;
-        node root;
         node left;
         node right;
 
