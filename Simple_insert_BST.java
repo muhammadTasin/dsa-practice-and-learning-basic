@@ -1,5 +1,5 @@
 import java.util.*;
-public class insert_BST {
+public class Simple_insert_BST {
     public static class node {
         node right;
         node left;
@@ -88,7 +88,7 @@ public class insert_BST {
             int result = insert(n1,num,target);
             if(result!=-1){
                 System.out.println("After inserting : " );
-                prinTree(n1);
+
             }
             else {
                 System.out.println("Target not found ");
