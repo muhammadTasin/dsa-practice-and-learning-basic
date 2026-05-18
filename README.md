@@ -211,6 +211,6 @@ Educational use - Feel free to learn and practice!
 
 ---
 
-**Remember: DSA is about building a strong foundation for solving complex problems efficiently. Each program here is a stepping stone.** 🚀
+**Remember: DSA is about building a strong foundation for solving complex problems efficiently. Each program here is a stepping stone.** 
 
-**Keep coding, keep learning, and celebrate your progress!** 🎉
+**Keep coding, keep learning, and celebrate your progress!** 
