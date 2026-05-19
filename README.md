@@ -4,207 +4,204 @@ Complete Data Structures and Algorithms learning journey from basic concepts to 
 
 ## About
 
-This repository documents my comprehensive DSA learning path. It contains implementations, concepts explanations, and problem solutions—from fundamentals to advanced algorithms and data structures.
+This repository documents my comprehensive DSA learning path. It contains implementations, concepts explanations, and problem solutions—from fundamentals to advanced algorithms.
 
-## Repository Structure
+## 🎯 Repository Structure
 
-### 📚 Topics Covered
-
-#### 1. **Recursion Fundamentals**
-- Base case understanding
-- Recursive thinking
-- Power calculations using recursion
-- **File:** `AraiseB.java`, `returning1.java`
-
-#### 2. **Binary Search Trees (BST)**
-- Tree node creation and traversal
-- Min/Max finding in BST
-- Searching in binary trees
-- Counting nodes in range
-- **Files:** `BST_Max_Min_Finder.java`, `search_BST.java`, `Count_BstNode_In_Range.java`
-
-#### 3. **Tree Traversals**
-- Pre-order traversal
-- Post-order traversal
-- In-order traversal
-- Level tracking during traversal
-- **Files:** `preOrder.java`, `postOrder.java`, `TreeNode.java`
-
-#### 4. **Tree Properties**
-- Height calculation
-- Size/node counting
-- Tree structure analysis
-- **Files:** `Height.java`, `SizeOfTree.java`
-
-## Learning Levels
-
-### 🟢 Level 1: Fundamentals
-- Understanding recursion
-- Basic tree concepts
-- Simple traversals
-
-### 🟡 Level 2: Intermediate
-- Complex tree operations
-- Range queries
-- Multi-traversal implementations
-
-### 🔴 Level 3: Advanced
-- Optimized solutions
-- Edge case handling
-- Real-world applications
-
-### ⭐ Level 4: Expert
-- LeetCode problems
-- Interview-ready solutions
-- Production-quality code
-
-## Featured Programs
-
-| File | Concept | Difficulty |
-|------|---------|-----------|
-| `AraiseB.java` | Recursive Power Calculation | 🟢 Easy |
-| `returning1.java` | Recursive Countdown | 🟢 Easy |
-| `preOrder.java` | Pre-order Tree Traversal | 🟡 Medium |
-| `inOrder.java` | In-order Tree Traversal | 🟡 Medium |
-| `postOrder.java` | Post-order Tree Traversal | 🟡 Medium |
-| `Height.java` | Tree Height Calculation | 🟡 Medium |
-| `SizeOfTree.java` | Count Tree Nodes | 🟡 Medium |
-| `BST_Max_Min_Finder.java` | Find Min/Max in BST | 🟡 Medium |
-| `search_BST.java` | Search in BST | 🟡 Medium |
-| `TreeNode.java` | Multiple Traversals | 🟡 Medium |
-| `Count_BstNode_In_Range.java` | Range Count in BST | 🔴 Hard |
-
-## Getting Started
-
-### Prerequisites
-- Java 8 or higher
-- Understanding of basic programming concepts
-
-### Compilation & Running
-
-```bash
-# Compile
-javac ProgramName.java
-
-# Run
-java ProgramName
+```
+dsa-practice-and-learning-basic/
+├── basics/                    # Foundational concepts
+│   ├── recursion/
+│   ├── arrays/
+│   ├── searching/
+│   └── sorting/
+├── intermediate/              # Core data structures
+│   ├── trees/
+│   ├── graphs/
+│   ├── stacks-queues/
+│   └── dynamic-programming/
+├── leetcode/                  # Problem solutions
+│   ├── easy/
+│   ├── medium/
+│   └── hard/
+├── assignments/               # Course assignments
+└── README.md
 ```
 
-**Example:**
+## 📚 Topics Covered
+
+### 🟢 Level 1: Fundamentals
+- **Recursion** — Base cases, recursive thinking, power calculations
+- **Tree Basics** — Node structure, tree properties
+- **Tree Traversals** — Pre-order, In-order, Post-order
+
+### 🟡 Level 2: Intermediate  
+- **Binary Search Trees (BST)** — Insertion, search, min/max
+- **Tree Properties** — Height, size, depth
+- **Complex Operations** — Range queries, balancing
+
+### 🔴 Level 3: Advanced
+- **Graph Algorithms** — DFS, BFS, shortest paths
+- **Dynamic Programming** — Memoization, tabulation
+- **Optimization Problems** — Greedy, divide-and-conquer
+
+### ⭐ Level 4: LeetCode & Interviews
+- Medium and hard problem solutions
+- Edge case handling
+- Production-quality optimized code
+
+## 📋 Featured Programs
+
+| File | Concept | Level |
+|------|---------|-------|
+| `AraiseB.java` | Recursive Power | 🟢 Easy |
+| `returning1.java` | Recursive Countdown | 🟢 Easy |
+| `preOrder.java` | Pre-order Traversal | 🟡 Medium |
+| `inOrder.java` | In-order Traversal | 🟡 Medium |
+| `postOrder.java` | Post-order Traversal | 🟡 Medium |
+| `Height.java` | Tree Height | 🟡 Medium |
+| `SizeOfTree.java` | Count Nodes | 🟡 Medium |
+| `BST_Max_Min_Finder.java` | BST Min/Max | 🟡 Medium |
+| `search_BST.java` | BST Search | 🟡 Medium |
+| `Count_BstNode_In_Range.java` | Range Count | 🔴 Hard |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Java 8 or higher (Java 21+ recommended)
+- IDE: IntelliJ IDEA, VS Code, or Eclipse
+
+### Quick Start
+
 ```bash
+# Compile a program
+javac ProgramName.java
+
+# Run it
+java ProgramName
+
+# Example
 javac Height.java
 java Height
 ```
 
-## Key Concepts Explained
+### Using IDE
+1. Open folder as project
+2. Navigate to any `.java` file
+3. Right-click → Run or press Ctrl+Shift+F10 (IntelliJ)
+
+## 📖 Key Concepts
 
 ### Recursion
-A function that calls itself to solve a smaller version of the same problem.
 ```
-Base Case: Stop condition
-Recursive Case: Call function with modified input
+Function calls itself to solve smaller version of problem
+├── Base Case: Stopping condition
+└── Recursive Case: Call with modified input
 ```
 
 ### Tree Traversals
-- **Pre-order:** Visit → Left → Right
-- **In-order:** Left → Visit → Right
-- **Post-order:** Left → Right → Visit
+- **Pre-order:** Node → Left → Right
+- **In-order:** Left → Node → Right  
+- **Post-order:** Left → Right → Node
 
 ### Binary Search Tree (BST)
-- Left child < Parent < Right child
-- Enables efficient searching
-- O(log n) average case
+```
+Property: Left < Parent < Right
+Benefit: O(log n) average search time
+Structure: Maintains sorted order
+```
 
-## Practice Tips
+## 💡 How to Use This Repo
 
-✅ **Understand before coding** - Know the algorithm first  
-✅ **Trace through examples** - Follow code step-by-step  
-✅ **Modify and experiment** - Change values and see results  
-✅ **Compare solutions** - Different approaches for same problem  
-✅ **Time complexity** - Understand O(n) analysis  
+### 1️⃣ First Pass
+- Read the algorithm explanation
+- Trace through code manually
+- Understand the logic flow
+- Run the program
 
-## What to Learn
-
-### 1st Time Through
-- Understand each program's purpose
-- Trace the code manually
-- Run and observe output
-
-### 2nd Time Through
-- Modify programs (change data structures, values)
+### 2️⃣ Second Pass
+- Modify values and observe changes
 - Write similar programs from scratch
-- Solve variations
+- Solve related variations
+- Test edge cases
 
-### 3rd Time Through
-- Optimize solutions
+### 3️⃣ Third Pass
+- Optimize for speed/memory
 - Combine multiple concepts
 - Solve complex problems
+- Prepare for interviews
 
-## Roadmap for Growth
-
-```
-Basic Recursion → Trees → BST → Advanced Trees → Graphs → DP
-```
-
-## Next Steps
-
-After mastering these concepts:
-- [ ] AVL Trees and Self-balancing Trees
-- [ ] Graph algorithms (DFS, BFS)
-- [ ] Dynamic Programming
-- [ ] LeetCode Medium/Hard problems
-- [ ] Interview preparation
-
-## Common Challenges & Solutions
-
-**Q: Tree traversals seem similar?**  
-A: Yes! The difference is *when* you visit the node:
-- Pre-order: Visit first
-- In-order: Visit in middle
-- Post-order: Visit last
-
-**Q: How to calculate tree height?**  
-A: Height = 1 + max(leftHeight, rightHeight)
-
-**Q: What's the BST advantage?**  
-A: Searching is O(log n) instead of O(n)
-
-## Resources Used
-
-- Java documentation
-- Data Structures & Algorithms textbooks
-- Online coding platforms
-- Problem-solving practice
-
-## File Structure
+## 🗺️ Learning Path
 
 ```
-dsa-practice-and-learning-basic/
-├── AraiseB.java
-├── returning1.java
-├── preOrder.java
-├── postOrder.java
-├── TreeNode.java
-├── Height.java
-├── SizeOfTree.java
-├── BST_Max_Min_Finder.java
-├── search_BST.java
-├── Count_BstNode_In_Range.java
-└── README.md
+Recursion → Trees → BST → Graphs → Dynamic Programming → Advanced Algorithms
 ```
 
-## Progress Tracking
+## ✅ Progress Checklist
 
 - [x] Recursion fundamentals
-- [x] Tree basics
-- [x] Traversals (Pre, In, Post)
-- [x] Tree properties (Height, Size)
+- [x] Tree basics & traversals
+- [x] Tree properties (height, size)
 - [x] Binary Search Trees
-- [x] BST operations
-- [ ] Self-balancing trees
-- [ ] Graph algorithms
-- [ ] Dynamic programming
+- [x] BST operations & range queries
+- [ ] Self-balancing trees (AVL, Red-Black)
+- [ ] Graph algorithms (DFS, BFS, Dijkstra)
+- [ ] Dynamic Programming patterns
+- [ ] LeetCode Medium problems
+- [ ] LeetCode Hard problems
 
-## License
+## 🎓 Interview Prep
 
-Educational use - Feel free to learn and practice!
+For interview preparation, focus on:
+- Tree & BST operations
+- Graph traversal & shortest paths
+- Dynamic programming patterns
+- Time & space complexity analysis
+- Edge case handling
+
+**Target:** LeetCode Medium & Hard problems
+
+## 🛠️ Development Notes
+
+- **Code Style:** Clear variable names, well-commented
+- **Time Complexity:** Noted in code comments
+- **Space Complexity:** Optimizations documented
+- **Test Cases:** Example runs included
+
+## 📚 Resources & References
+
+- [GeeksforGeeks DSA](https://www.geeksforgeeks.org/data-structures/)
+- [LeetCode Problems](https://leetcode.com/)
+- [Abdul Bari DSA Tutorial](https://www.youtube.com/playlist?list=PLDN4rrl48XKpZkP4oJjT5TPgPCAhYL94nJ)
+- [Java Documentation](https://docs.oracle.com/javase/)
+
+## 🤝 Contributing
+
+Feel free to:
+- ✅ Add new solutions
+- ✅ Optimize existing code
+- ✅ Add detailed explanations
+- ✅ Include more test cases
+- ✅ Fix bugs or improve clarity
+
+## ⏱️ Compilation Tips
+
+### Remove Compiled Files
+```bash
+find . -name "*.class" -delete
+```
+
+### Clean Build
+```bash
+rm -rf out/
+# Then recompile as needed
+```
+
+## 📝 License
+
+Educational use - Free to learn, practice, and improve!
+
+---
+
+**Last Updated:** May 2026  
+**Status:** 🟢 Active - Regularly adding problems and optimizations
