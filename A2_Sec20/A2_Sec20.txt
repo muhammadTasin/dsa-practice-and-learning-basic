@@ -1,0 +1,114 @@
+// Lab 2 Part 1
+class LinkedList{
+    Node head;
+
+    public void append(Integer val){
+        Node nodeToAdd = new Node(val);
+
+        if (head == null){
+            head = nodeToAdd;
+            return;
+        }
+
+        Node lastNode = head;
+
+        while (lastNode.next != null){
+            lastNode = lastNode.next;
+        }
+
+        lastNode.next = nodeToAdd;
+    }
+
+    public void printList(){
+        Node currentNode = head;
+
+        while (currentNode != null){
+            System.out.print(currentNode.elem);
+
+            if (currentNode.next != null){
+                System.out.print(" -> ");
+            }
+
+            currentNode = currentNode.next;
+        }
+
+        System.out.println();
+    }
+
+    public void prepend(Integer val){
+        Node nodeToAdd = new Node(val);
+        nodeToAdd.next = head;
+        head = nodeToAdd;
+    }
+
+    public Node nodeAt(int indx){
+        if (indx < 0){
+            return null;
+        }
+
+        Node currentNode = head;
+        int currentIndex = 0;
+
+        while (currentNode != null){
+            if (currentIndex == indx){
+                return currentNode;
+            }
+
+            currentNode = currentNode.next;
+            currentIndex++;
+        }
+
+        return null;
+    }
+
+    public void removeFirst(){
+        if (head == null){
+            return;
+        }
+
+        head = head.next;
+    }
+
+    public void removeLast(){
+        if (head == null){
+            return;
+        }
+
+        if (head.next == null){
+            head = null;
+            return;
+        }
+
+        Node previousNode = head;
+        Node lastNode = head.next;
+
+        while (lastNode.next != null){
+            previousNode = lastNode;
+            lastNode = lastNode.next;
+        }
+
+        previousNode.next = null;
+    }
+}
+
+
+// Lab 2 Part 2
+public static String checkSimilar(Node building1, Node building2){
+    Node blockFromFirst = building1;
+    Node blockFromSecond = building2;
+
+    while (blockFromFirst != null && blockFromSecond != null){
+        if (!blockFromFirst.elem.equals(blockFromSecond.elem)){
+            return "Not Similar";
+        }
+
+        blockFromFirst = blockFromFirst.next;
+        blockFromSecond = blockFromSecond.next;
+    }
+
+    if (blockFromFirst == null && blockFromSecond == null){
+        return "Similar";
+    }
+
+    return "Not Similar";
+}
