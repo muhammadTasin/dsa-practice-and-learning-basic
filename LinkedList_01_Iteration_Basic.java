@@ -31,11 +31,10 @@ public class LinkedList_01_Iteration_Basic {
     }
 
     public static void printList(Node head) {
-        // TODO: Start from head and print every node data until current becomes null.
         Node temp = head;
 
-        while (temp!=null){
-            System.out.println(temp.data);
+        while (temp != null) {
+            System.out.print(temp.data + " ");
             temp = temp.next;
         }
 
@@ -43,12 +42,11 @@ public class LinkedList_01_Iteration_Basic {
     }
 
     public static int countNodes(Node head) {
-        // TODO: Count how many nodes are in the linked list.
+        int count = 0;
+        Node temp = head;
 
-        int count =0;
-        Node temp =head;
-        while (temp!=null){
-            temp= temp.next;
+        while (temp != null) {
+            temp = temp.next;
             count++;
         }
 
@@ -56,13 +54,11 @@ public class LinkedList_01_Iteration_Basic {
     }
 
     public static int sumNodes(Node head) {
-        // TODO: Add all node data values and return the sum.
-        int sum =0;
-
+        int sum = 0;
         Node temp = head;
 
-        while (temp!=null){
-            sum+=temp.data;
+        while (temp != null) {
+            sum += temp.data;
             temp = temp.next;
         }
 
